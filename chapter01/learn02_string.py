@@ -37,7 +37,7 @@ print(f"Output #4.3: '{favorite_luanguge.strip()}'");
 print(f"Output #5: '{favorite_luanguge}'");
 # 承接结果
 favorite_luanguge = favorite_luanguge.rstrip();
-favorite_luanguge = favorite_luanguge.rstrip();
+favorite_luanguge = favorite_luanguge.lstrip();
 print(f"Output #6: '{favorite_luanguge}'");
 
 # 删除前缀
