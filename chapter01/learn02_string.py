@@ -41,3 +41,19 @@ favorite_luanguge = favorite_luanguge.lstrip();
 print(f"Output #6: '{favorite_luanguge}'");
 
 # 删除前缀
+# 使用 removeprefix() 删除前缀，如果前缀匹配失败，则不做任何操作
+# 但是它不改变原始字符串的值，需要用变量承接才能做结果存储
+nostarch_url = "https://nostarch.com/";
+print(f"Output #7: '{nostarch_url.removeprefix("https://")}'");
+print(f"Output #8: '{nostarch_url}'");
+nostarch_url = nostarch_url.removeprefix("https://");
+print(f"Output #9: '{nostarch_url}'");
+# 删除后缀
+# 使用 removesuffix() 删除后缀，用法与 removeprefix 一致
+file_name = "learn02_string.txt";
+print(f"Output #10: '{file_name.removesuffix('.txt')}'");
+print(f"Output #11: '{file_name}'");
+
+#test
+said_msg = 'Hello, he said :"do yourself!"';
+print(f"#Output #12: {said_msg}");
