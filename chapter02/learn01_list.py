@@ -15,3 +15,6 @@ log.info(f"Output #1: {bicycle}");
 
 # 访问列表元素
 log.info(f"Output #2: {bicycle[0].title()}");
+log.info(f"Output #3: {bicycle[1]}");
+log.info(f"Output #4: {bicycle[3]}");
+# log.info(f"Output #4.1: {bicycle[4]}"); # 下标越界
