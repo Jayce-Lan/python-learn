@@ -37,3 +37,12 @@ for num in range(1, 11):
     squares.append(num ** 2);
 log.info(f'Output #4: {squares}') # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
+# 数值列表的简单计算
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+log.info(f'Output #5.1: {sum(numbers)}'); # 45
+log.info(f'Output #5.2: {min(numbers)}'); # 0
+log.info(f'Output #5.3: {max(numbers)}'); # 9
+
+# 列表推导式
+squares2 = [item ** 2 for item in range(1, 11)];
+log.info(f'Output #6: {squares2}') # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
