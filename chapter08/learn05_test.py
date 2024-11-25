@@ -1,9 +1,9 @@
-from entity.die import Die
 from random import choice
-
 import logging
 import logging.config
 import os
+
+from entity.die import Die
 
 current_filename = os.path.splitext(os.path.basename(__file__))[0];
 logging.config.fileConfig('logging.conf');
