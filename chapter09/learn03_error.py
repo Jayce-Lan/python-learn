@@ -82,3 +82,23 @@ def pass_exception(file_path):
 #               '/Users/lanjiesi/Documents/test/test2.txt']
 # for file_path in file_paths:
 #     pass_exception(file_path)
+
+def word_count(file_path, word):
+    """
+    @param file_path: 文件地址
+    @param word: 需要查找的词
+    计算某个单词在文本中出现的次数
+    """
+    path = Path(file_path)
+    try:
+        contents = path.read_text(encoding='utf-8')
+    except FileNotFoundError:
+        log.error(f'file path not found: {file_path}')
+        return
+    else:
+        # 记得此处将“word”转为字符串，否则可能会导致调用lower()函数异常
+        count = contents.lower().count(str(word).lower())
+        log.info(f'The word \'{word}\' appears {count} times in the file.')
+
+
+word_count('/Users/lanjiesi/Documents/test/test_write.txt', '')
