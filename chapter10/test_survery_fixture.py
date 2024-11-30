@@ -13,6 +13,7 @@ def language_survey():
 def test_store_single_response(language_survey):
     """
     测试单个答案是否能被存储
+    函数接收与上面创建实体类函数方法名一致的形参，统一调用
     """
     language_survey.store_response('English')
     assert 'English' in language_survey.show_results()
@@ -20,6 +21,7 @@ def test_store_single_response(language_survey):
 def test_store_single_responses(language_survey):
     """
     测试单个答案是否能被存储
+    函数接收与上面创建实体类函数方法名一致的形参，统一调用
     """
     responses = ['English', 'Chinese', 'Spanish']
     for response in responses:
