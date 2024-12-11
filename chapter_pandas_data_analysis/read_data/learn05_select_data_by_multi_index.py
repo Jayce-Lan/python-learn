@@ -1,6 +1,13 @@
 import logging
 import logging.config
 import os
+from pathlib import Path
+import sys
+
+# 获取当前文件所在的目录的绝对路径，并得到其父级目录（即create_data_frame.py所在的目录）
+parent_dir = Path(__file__).resolve().parent.parent
+# 将父级目录添加到系统路径中
+sys.path.append(str(parent_dir))
 
 from create_data_frame import get_data_frame_5column
 
