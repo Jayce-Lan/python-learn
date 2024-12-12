@@ -71,5 +71,7 @@ log.info(f'\n{df['Country'].duplicated(keep=False)}')
 log.info(f'\n{df_duplicate.duplicated(keep=False)}')
 
 # 利用keep=False的特性找出所有的重复项
-df_duplicate_duplicated = df_duplicate[df_duplicate['Country'].duplicated(keep=False)]
+# df_duplicate_duplicated = df_duplicate[df_duplicate['Country'].duplicated(keep=False)]
+# 效果一致
+df_duplicate_duplicated = df_duplicate.loc[df_duplicate['Country'].duplicated(keep=False), :]
 log.info(f'\n{df_duplicate_duplicated}')
