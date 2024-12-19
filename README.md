@@ -5,6 +5,9 @@
 ##### chapter_pandas_data_analysis
 
 `pandas` 实现数据分析（针对DataFrame和Series）
+> plot
+
+使用`matplotlib`和`plotly`实现绘图
 
 > combination_data_frame
 
