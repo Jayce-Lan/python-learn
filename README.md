@@ -13,6 +13,7 @@
 - `concat` 连接多个DataFrame
 - `join` 通过索引连接两个DataFrame
 - `merge` 通过列连接两个DataFrame
+- `pivot_table_and_melt` 通过`pivot_table`方法透视图表；使用`melt`方法反透视图表
 
 > control_data
 
