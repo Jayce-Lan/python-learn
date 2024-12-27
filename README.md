@@ -5,6 +5,7 @@
 ##### chapter_pandas_data_analysis
 
 `pandas` 实现数据分析（针对DataFrame和Series）
+
 > plot
 
 使用`matplotlib`和`plotly`实现绘图
@@ -18,8 +19,11 @@
 `DataFrame` 组合相关
 
 - `concat` 连接多个DataFrame
+
 - `join` 通过索引连接两个DataFrame
+
 - `merge` 通过列连接两个DataFrame
+
 - `pivot_table_and_melt` 通过`pivot_table`方法透视图表；使用`melt`方法反透视图表
 
 > control_data
@@ -52,6 +56,13 @@
 
 - `select_data_by_multi_index` 通过MultiIndex（多级索引）将数据分组（类似group by操作）
 
+##### chapter_time_series
+
+使用`pandas`实现时序分析
+
+> datatime_index
+
+- `create_datetime_index` 创建 `DatetimeIndex` 
 
 
 ##### chapter01
